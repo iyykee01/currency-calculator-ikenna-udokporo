@@ -6,7 +6,7 @@ target 'currency-converter' do
   use_frameworks!
 
   # Pods for currency-converter
-	pod "PromiseKit/CorePromise", "~> 6.8"
+  pod 'PromiseKit/Alamofire'
 	pod 'SwiftyJSON', '~> 4.0'
 
 end
