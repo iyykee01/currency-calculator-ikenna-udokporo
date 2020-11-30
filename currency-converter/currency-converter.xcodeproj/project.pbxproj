@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		0F89BB432574F9A600B55F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F89BB412574F9A600B55F69 /* Main.storyboard */; };
 		0F89BB452574F9A800B55F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F89BB442574F9A800B55F69 /* Assets.xcassets */; };
 		0F89BB482574F9A800B55F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F89BB462574F9A800B55F69 /* LaunchScreen.storyboard */; };
+		0F89BB6C2575125200B55F69 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F89BB6B2575125200B55F69 /* Colours.swift */; };
+		0F89BB6F2575125800B55F69 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F89BB6E2575125800B55F69 /* Fonts.swift */; };
+		0F89BB722575125E00B55F69 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F89BB712575125E00B55F69 /* Layout.swift */; };
+		0F89BB7C257519BE00B55F69 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0F89BB7B257519BE00B55F69 /* Fonts */; };
+		0F89BB7F25754C5A00B55F69 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F89BB7E25754C5900B55F69 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		0F89BB442574F9A800B55F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F89BB472574F9A800B55F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F89BB492574F9A800B55F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F89BB6B2575125200B55F69 /* Colours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		0F89BB6E2575125800B55F69 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		0F89BB712575125E00B55F69 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		0F89BB7B257519BE00B55F69 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		0F89BB7E25754C5900B55F69 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		921DB73D6B6E7FF495C7B094 /* Pods_currency_converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_currency_converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEC47CED3E81F5704AC5A9C /* Pods-currency-converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency-converter.debug.xcconfig"; path = "Target Support Files/Pods-currency-converter/Pods-currency-converter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,15 +73,52 @@
 		0F89BB3A2574F9A600B55F69 /* currency-converter */ = {
 			isa = PBXGroup;
 			children = (
+				0F89BB7B257519BE00B55F69 /* Fonts */,
+				0F89BB6A2575123200B55F69 /* Shared */,
+				0F89BB53257508D800B55F69 /* Models */,
+				0F89BB52257508C200B55F69 /* StoryBoards */,
+				0F89BB512575089D00B55F69 /* View Controller */,
 				0F89BB3B2574F9A600B55F69 /* AppDelegate.swift */,
 				0F89BB3D2574F9A600B55F69 /* SceneDelegate.swift */,
-				0F89BB3F2574F9A600B55F69 /* ViewController.swift */,
-				0F89BB412574F9A600B55F69 /* Main.storyboard */,
 				0F89BB442574F9A800B55F69 /* Assets.xcassets */,
 				0F89BB462574F9A800B55F69 /* LaunchScreen.storyboard */,
 				0F89BB492574F9A800B55F69 /* Info.plist */,
 			);
 			path = "currency-converter";
+			sourceTree = "<group>";
+		};
+		0F89BB512575089D00B55F69 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F89BB3F2574F9A600B55F69 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		0F89BB52257508C200B55F69 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0F89BB412574F9A600B55F69 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		0F89BB53257508D800B55F69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0F89BB6A2575123200B55F69 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0F89BB6B2575125200B55F69 /* Colours.swift */,
+				0F89BB6E2575125800B55F69 /* Fonts.swift */,
+				0F89BB712575125E00B55F69 /* Layout.swift */,
+				0F89BB7E25754C5900B55F69 /* Utility.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		5CA80074CE8E98D21E0D35A6 /* Pods */ = {
@@ -80,7 +127,6 @@
 				BEEC47CED3E81F5704AC5A9C /* Pods-currency-converter.debug.xcconfig */,
 				0A777C8A05CA191BFF855477 /* Pods-currency-converter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +200,7 @@
 				0F89BB482574F9A800B55F69 /* LaunchScreen.storyboard in Resources */,
 				0F89BB452574F9A800B55F69 /* Assets.xcassets in Resources */,
 				0F89BB432574F9A600B55F69 /* Main.storyboard in Resources */,
+				0F89BB7C257519BE00B55F69 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F89BB7F25754C5A00B55F69 /* Utility.swift in Sources */,
 				0F89BB402574F9A600B55F69 /* ViewController.swift in Sources */,
+				0F89BB6F2575125800B55F69 /* Fonts.swift in Sources */,
 				0F89BB3C2574F9A600B55F69 /* AppDelegate.swift in Sources */,
 				0F89BB3E2574F9A600B55F69 /* SceneDelegate.swift in Sources */,
+				0F89BB6C2575125200B55F69 /* Colours.swift in Sources */,
+				0F89BB722575125E00B55F69 /* Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
